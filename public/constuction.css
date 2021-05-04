@@ -1,0 +1,132 @@
+#hat {
+    display: block;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px);
+    transform: translateY(-50%);
+    margin: auto;
+    animation: hat-anim .65s step-start infinite;
+    box-shadow:  
+          5px 5px  #FEDA00,
+          -5px 5px #FEDA00, 
+      
+          -15px 10px #FEDA00,
+          -10px 10px  #FFB001, 
+          -5px 10px #FEDA00,
+          0px 10px  #FFB001,
+          5px 10px  #FEDA00,
+          10px 10px  #FFB001,
+          15px 10px  #FEDA00,
+          
+          -20px 15px  #FFB001,
+          -15px 15px  #FEDA00,
+          -10px 15px  #FFB001,
+          -5px 15px  #FEDA00,
+          -0px 15px  #FFB001,
+          5px 15px  #FEDA00,
+          10px 15px  #FFB001,
+          15px 15px  #FEDA00,
+          20px 15px  #FEDA00,
+  
+           -20px 20px  #FFB001,
+          -15px 20px  #FEDA00,
+          -10px 20px  #FFB001,
+          -5px 20px  #FEDA00,
+          -0px 20px  #FFB001,
+          5px 20px  #FEDA00,
+          10px 20px  #FFB001,
+          15px 20px  #FEDA00,
+          20px 20px  #FEDA00,
+          
+          -20px 25px  #FFB001,
+          -15px 25px  #FEDA00,
+          -10px 25px  #FEDA00,
+          -5px 25px  #FEDA00,
+          -0px 25px  #FEDA00,
+          5px 25px  #FEDA00,
+          10px 25px  #FEDA00,
+          15px 25px  #FEDA00,
+          20px 25px  #FEDA00,
+  
+          -25px 30px  #FFB001,
+          -20px 30px  #FFB001,
+          -15px 30px  #FFB001,
+          -10px 30px  #FFB001,
+          -5px 30px  #FFB001,
+          -0px 30px  #FFB001,
+          5px 30px  #FFB001,
+          10px 30px  #FFB001,
+          15px 30px  #FFB001,
+          20px 30px  #FFB001,
+          25px 30px  #FFB001;
+  }
+
+  @keyframes hat-anim {
+  50%  {
+    box-shadow:  
+          5px 5px  #FEDA00,
+          -5px 5px #FEDA00, 
+          
+          -15px 10px #FEDA00,
+          -10px 10px  #FFB001, 
+          -5px 10px #FEDA00,
+          0px 10px  #FFB001,
+          5px 10px  #FEDA00,
+          10px 10px  #FFB001,
+          15px 10px  #FEDA00,
+          
+          -20px 15px  #FFB001,
+          -15px 15px  #FEDA00,
+          -10px 15px  #FFB001,
+          -5px 15px  #FEDA00,
+          -0px 15px  #FFB001,
+          5px 15px  #FEDA00,
+          10px 15px  #FFB001,
+          15px 15px  #FEDA00,
+          20px 15px  #FEDA00,
+          
+          -20px 20px  #FFB001,
+          -15px 20px  #FEDA00,
+          -10px 20px  #FEDA00,
+          -5px 20px  #FEDA00,
+          -0px 20px  #FEDA00,
+          5px 20px  #FEDA00,
+          10px 20px  #FEDA00,
+          15px 20px  #FEDA00,
+          20px 20px  #FEDA00,
+  
+          -25px 25px  #FFB001,
+          -20px 25px  #FFB001,
+          -15px 25px  #FFB001,
+          -10px 25px  #FFB001,
+          -5px 25px  #FFB001,
+          -0px 25px  #FFB001,
+          5px 25px  #FFB001,
+          10px 25px  #FFB001,
+          15px 25px  #FFB001,
+          20px 25px  #FFB001,
+          25px 25px  #FFB001;
+    }
+}
+
+#text{
+  font-family: 'Press Start 2P', cursive;
+  font-size:10px;
+  position: absolute;
+  text-align:center;
+  left: 0;
+  right: 0;
+  top: calc(50% + 5px);
+  display: block;
+  animation: text-anim .65s step-start    infinite;
+}
+
+ @keyframes text-anim {
+   50%  {
+     text-shadow: 0 0 10px #E6E701;
+   }
+}
+

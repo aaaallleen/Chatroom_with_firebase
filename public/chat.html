@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+</html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Midterm chatroom</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="chat.css">
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+    <script src="config.js"></script>
+    <script src="chat.js"></script>
+</head>
+
+<body>
+    <div id ="topnav" class="topnav">
+        <input type="text" id ="room" class="room">
+        <button type="button" id="search"><img src='img/search.png' width="40px" height = "40px" style="margin-left: -1px;"></button>
+        <button type="button" id="create"><img src='img/add.png' width="40px" height = "40px" style="margin-left: -1px;"></button>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="#" id="account" title="account setting"></a>
+        <a href="#" onclick = "logout()" id="peaceout">Sign out<img src="img/logout.png" width="30px" height = "30px" style="margin-left: 30px;"></a>
+        <a href="#" id="password" onclick="showpassword()">Password</a>
+        <div id ='chats'></div>
+        
+    </div>
+    
+    <button type="button" id = 'logout-btn' /hidden></button>
+    <div id="chatContainer">
+        <div id="chat_list"></div>
+    </div>
+        <input type="text" id="chatinput" class="chatinput" autofocus>
+        <div id="imgContainer">
+        <button type="button" class="btnSend" id="img_btn" onclick="upload()"><img src="img/image.png" width="35px" height="30px" style="border: 0"></button>
+        <input type="file" id="img" accept="image/*" /hidden>
+        </div>
+        <div id="sendContainer">
+            <button type="button" class="btnSend" id="post_btn"><img src="img/send.png" width="30px" height="30px" style="border: 0"></button>
+        </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="offcanvas.js"></script>
+</body>
+
+</html>

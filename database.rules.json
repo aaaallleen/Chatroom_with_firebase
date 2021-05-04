@@ -1,0 +1,14 @@
+{
+  "rules": {
+      "chat_rooms": {
+          ".read": "auth != null",
+          ".write": "auth != null"
+      },
+      "Username_list": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+    },
+      ".write": false,
+      ".read": false
+  }
+}

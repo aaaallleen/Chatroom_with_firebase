@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+</html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Midterm chatroom</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+    <script src="config.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    
+    <div class="topnav" id="myTopnav">
+    <a href="#Account" class="active">Account</a>
+    <a href="construction.html">News</a>
+    <a href="construction.html">Contact</a>
+    <a href="construction.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    </div>
+    <br>
+    <h1 style="text-align: center;">Welcome to the chatroom!!</h1>
+    <br>
+    <img src="img/chatsnap.PNG" alt="chatroom snapshot" id="chatsnap">
+    <br>
+    <div class = 'buttoncontainer'>
+      <input type ="button" id = "Login" value="Login" class="button" onclick="login()" style="display: none;">
+    </div>
+    <div class = 'buttoncontainer' >
+      <input type =button id = "Signup" value="Sign Up" class="button" onclick="signup()"style="display: none;" >
+    </div>
+    <div class = 'buttoncontainer'>
+      <input type ="button" id = "Chat" value="Chat" class="button" onclick="chat()" style="display: none;">
+    </div>
+    <div class = 'buttoncontainer'>
+    <input type =button id = "Logout" value="Logout" class="button" onclick="logout()" style="display: none;">
+    </div>
+    <br>
+    <br>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="offcanvas.js"></script>
+</body>
+
+</html>

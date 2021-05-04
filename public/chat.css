@@ -1,0 +1,302 @@
+html,
+body {
+  background-color: rgba(225, 227, 221, 0.931);
+  min-width:1000px;        /* Suppose you want minimum width of 1000px */
+  width: auto !important;  /* Firefox will set width as auto */
+  width:1000px;    
+}
+#account{
+  font-size: 10;
+  text-align: center;
+  font-family: Chalkduster, fantasy;
+  background-color: #CAA472;
+  border-style:outset;
+  border-width: thick;
+  border-color: #663300;
+}
+#password{
+  background-color: #F4F0E8 ;
+  position:fixed;
+  bottom: 50px;
+  width: 20%;
+  max-width: 400px;
+  min-width: 200px;
+  border-style: double ;
+  border-width: thick;
+}
+#password:hover{
+  background-color: rgb(248, 172, 172);
+}
+.room{
+  width:150px;
+  height:50px;
+  align-content: center;
+  float:right;
+  font-size: 30px;
+  background-color:white;
+  margin-top: 3px;
+  margin-right: 5%;
+}
+#search{
+  margin-top: 3px;
+  height:50px;
+  width: 50px;
+  margin-right: 5px;
+  float: right;
+  background-color: rgb(221, 221, 221);
+  cursor: pointer;
+  outline: none !important;
+  border-radius:10%;
+}
+
+#search:hover{
+  background-color: rgb(199, 199, 199);
+  outline:none;
+}
+#search:active{ 
+  outline:none ;
+  border-style:inset;
+  box-shadow: 0 2px #666;
+}
+#create{
+  margin-top: 3px;
+  height:50px;
+  width: 50px;
+  margin-right: 15px;
+  float: right;
+  background-color: rgb(221, 221, 221);
+  cursor: pointer;
+  outline: none !important;
+  border-radius:10%;
+}
+
+#create:hover{
+  background-color: rgb(199, 199, 199);
+  outline:none;
+}
+#create:active{ 
+  outline:none ;
+  border-style:inset;
+  box-shadow: 0 2px #666;
+}
+#chat_list{
+  padding-bottom: 5px;
+  padding-top:5px;
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.topnav{
+  background-color:#B1B3B3FF ;
+  height: 59px;
+  overflow:hidden;
+  border-bottom-style: double ;
+  border-color: whitesmoke;
+}
+.topnav a{
+  float: right;
+  text-align: center;
+  margin-right:10px;
+  color:black;
+  padding-right: 100px;
+  background-color: #E3CD81FF;
+  font-size: 25px;
+  padding: 6px 6px 6px 32px;
+  
+}
+.topnav a:hover{
+  background-color: li;
+}
+.sidenav {
+    margin-top:0px;
+    height: 100%;
+    width: 20%;
+    max-width: 400px;
+    min-width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: darkgray;
+    overflow-x: hidden; 
+    padding-bottom: 20px;
+    border-style:none double none none 
+  }
+  
+  .sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    border-style:dashed none solid none;
+    border-width: thin;
+    background-color: gray;
+  }
+  
+  .sidenav a:hover {
+    background-color: lightgray;
+  }
+  #peaceout{
+    background-color: #F4F0E8 ;
+    position:fixed;
+    bottom: -10px;
+    width: 20%;
+    max-width: 400px;
+    min-width: 200px;
+    border-style: double ;
+    border-width: thick;
+  }
+  #peaceout:hover{
+    background-color: rgb(248, 172, 172);
+  }
+.logout{
+  float: right;
+  margin-right: 10px;
+  background-color: none;
+}
+#labelSignOut{
+  color: lightgray;
+  font-size: 20px;
+  margin-left: 40px;
+}
+  /* Page content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+.other_sender{
+  float:left;
+  margin-bottom: 10px;
+  background-color: lightgray;
+  color:black;
+  width: max-content;
+  padding: 10px 10px 0px 10px;
+  border-radius:10px;
+  
+}
+.Isend{
+  float: right;
+  margin-left:auto;
+  margin-bottom: 10px;
+  background-color: rgb(54, 138, 248);
+  color:white;
+  width: max-content;
+  padding: 10px 10px 0px 10px;
+  border-radius:10px;
+  text-align: right;
+}
+#chatContainer{
+  border-radius: 1%;
+  position: fixed;
+  height: 87%;
+  width: 74%;
+  margin-top: 20px;
+  margin-left: max(250px, 22%);
+  margin-right: 50px;
+  max-height: 95%;
+  background-color: whitesmoke;
+  border-color:gray;
+  border-style:ridge;
+  margin-bottom: 2%;
+  overflow-y: scroll;
+  overflow-x:visible;
+}
+.chatinput{
+    width: calc(70% - 150px);
+    margin-left: max(240px, 21.5%);
+    height: 45px;
+    left: 10px;
+    position: absolute;
+    bottom: 2%;
+    background-color: rgb(236, 235, 235);
+}
+#chatContainer{
+  border-radius: 1%;
+  position: fixed;
+  height: 85%;
+  width: 74%;
+  margin-top: 20px;
+  margin-left: max(250px, 22%);
+  margin-right: 50px;
+  top: 60px;
+  bottom: 60px;
+  max-height: 95%;
+  background-color: whitesmoke;
+  border-color:gray;
+  border-style:ridge;
+  margin-bottom: 2%;
+  overflow-y: scroll;
+  overflow-x:visible;
+}
+#imgContainer{
+  height: 45px;
+  width: 80px;
+  position: absolute;
+  bottom: 2%;
+  right: max(110px, 6%);
+  outline: none;
+}
+#sendContainer{
+    height: 45px;
+    width: 80px;
+    position: absolute;
+    bottom: 2%;
+    right: max(200px, 10%);
+    outline: none;
+}
+#post_btn{
+  cursor: pointer;
+  border: none;
+  outline:none !important;
+  background-color: skyblue;
+  border-radius: 10%;
+  width: 100%;
+  height: 45px;
+  margin-left: 60%;
+}
+#post_btn:hover{
+  background-color: rgb(135, 190, 235);
+  outline:none;
+}
+#post_btn:active{ 
+  outline:none ;
+  border-style:inset;
+  box-shadow: 0 5px #666;
+}
+#post_btn:focus{
+  outline: none !important; 
+}
+#img_btn{
+  cursor: pointer;
+  border: none;
+  outline:none !important;
+  background-color: skyblue;
+  border-radius: 10%;
+  width: 100%;
+  height: 45px;
+  margin-left: 60%;
+}
+#img_btn:hover{
+  background-color: rgb(135, 190, 235);
+  outline:none;
+}
+#img_btn:active{ 
+  outline:none ;
+  border-style:inset;
+  box-shadow: 0 5px #666;
+}
+#img_btn:focus{
+  outline: none !important; 
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+#chatactive{
+  background-color: lightgoldenrodyellow;
+  border-style: double;
+}

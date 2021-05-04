@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+</html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Midterm chatroom - Sign in</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+    <script src="config.js"></script>
+    <script src="signin.js"></script>
+</head>
+
+<body>
+    
+    <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    </div>
+    <div id="custom-alert">
+
+      <div class="container">
+        <h1>Login</h1>
+        <p>Please enter your credentials.</p>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <hr>
+        <button type="submit" class="registerbtn" id="btnLogin">Sign In</button>
+        <button type="google" class="googlebtn" id="btngoogle">Register/Login with Google</button>
+      </div>
+    
+      <div class="container signin">
+        <p>Forgot your password? <a href="#">Ha ha</a>.</p>
+      </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="offcanvas.js"></script>
+</body>
+
+</html>
