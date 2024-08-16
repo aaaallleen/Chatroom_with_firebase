@@ -3,7 +3,7 @@
 ///         1. New a Firebase project
 ///         2. Copy and paste firebase config below
 var config = {
-    apiKey: "AIzaSyCVFYquRo7mGBA6p1cOjPNJidsKtobTscQ",
+    apiKey: "APIKEYHERE",
     authDomain: "midterm-chatroom-12910.firebaseapp.com",
     databaseURL: "https://midterm-chatroom-12910-default-rtdb.firebaseio.com",
     projectId: "midterm-chatroom-12910",
