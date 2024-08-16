@@ -1,5 +1,7 @@
-# Software studio Assignment Midterm
-108062135 呂佳恩
+# Chatroom using Firebase 
+呂佳恩
+
+Demo site: [Demo](https://midterm-chatroom-12910.web.app)
 
 ## Basic Layout
 ![](https://i.imgur.com/jhyYSW1.png)
